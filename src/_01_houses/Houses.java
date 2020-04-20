@@ -11,7 +11,7 @@ public class Houses {
 	static Robot rob = new Robot();
 	static int height = 0;
 
-	public static void main(String[] args) {
+	void run() {
 		rob.setSpeed(40);
 		rob.setX(60);
 		rob.setY(540);
