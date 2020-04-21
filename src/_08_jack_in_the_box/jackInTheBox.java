@@ -29,13 +29,13 @@ public class jackInTheBox implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		JButton buttonPressed = (JButton) arg0.getSource();
-		int i = 0;
-			if (buttonPressed == button) {
-				i = i + 1;
-				
+		int x = 0;
+		if (buttonPressed == button) {
+				x = x + 1;
+		
 		}
-			System.out.println(i);
-		if (i == 5) {
+			System.out.println(x);
+		if (x == 5) {
 			showPicture("jackInTheBox.png");
 		}
 	}
