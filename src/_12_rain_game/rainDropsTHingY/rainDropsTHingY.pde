@@ -21,7 +21,7 @@ void draw () {
     fill(0, 0, 225);
     stroke(0, 0, 0);
     ellipse(x, 5+y, 10, 10);
-    if (y>=299) {
+    if (y<=299&&y>=269) {
       checkCatch(x);
     y = 0;
     int randomNumber = (int) random(width);
@@ -31,7 +31,7 @@ void draw () {
   fill(0,0,225);
   stroke(0,0,0);
   ellipse(x2, -51+y2, 10, 10); 
-  if (y2>=350) {
+  if (y2<=350&&y2>=320) {
     checkCatch(x2);
   y2 = 0;
   int randomNumber2 = (int) random (width);
@@ -41,7 +41,7 @@ void draw () {
   fill(225,0, 0);
   stroke(0,0,0);
   ellipse(x3, -3100+y3, 10, 10); 
-  if (y3>=3399) {
+  if (y3<=3399&&y3>=3369) {
   checkCatch(x3);
   y3 = 1000;
   int randomNumber3 = (int) random (width);
@@ -53,6 +53,9 @@ void draw () {
             score++;
          }
          else { 
+           if (x==x3) {
+             score-=3;
+           }
             score -=2;
          }
             if (score<0) {
