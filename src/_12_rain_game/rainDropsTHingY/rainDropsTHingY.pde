@@ -6,7 +6,7 @@ int y3 = 0;
 int x3 = 297;
 int score = 0; 
 void setup () {
-  size(300, 300); 
+size(300, 300); 
 }
 
 void draw () {
